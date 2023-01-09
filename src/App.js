@@ -1,5 +1,5 @@
 // Router and imports
-import { Route } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import {
   Welcome,
   welcomePath,
@@ -18,15 +18,20 @@ function App() {
     <div className="app">
       <MainHeader />
       <main>
-        <Route path={welcomePath}>
-          <Welcome />
-        </Route>
-        <Route path={productsPath}>
-          <Products />
-        </Route>
-        <Route path={productDetailPath + "/:productId"}>
-          <ProductDetail />
-        </Route>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to={welcomePath} />
+          </Route>
+          <Route path={welcomePath}>
+            <Welcome />
+          </Route>
+          <Route path={productsPath} exact>
+            <Products />
+          </Route>
+          <Route path={productsPath + "/:productId"}>
+            <ProductDetail />
+          </Route>
+        </Switch>
       </main>
     </div>
   );
