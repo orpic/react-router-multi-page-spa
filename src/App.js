@@ -6,6 +6,7 @@ import {
   Products,
   productsPath,
   ProductDetail,
+  productDetailPath,
 } from "./pages";
 import { MainHeader } from "./components";
 
@@ -23,7 +24,7 @@ function App() {
         <Route path={productsPath}>
           <Products />
         </Route>
-        <Route path={productsPath}>
+        <Route path={productDetailPath + "/:productId"}>
           <ProductDetail />
         </Route>
       </main>
@@ -32,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+//domain.com/{productDetailPath}/: dynamic segment(anything)
