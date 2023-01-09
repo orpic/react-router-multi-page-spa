@@ -1,0 +1,12 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-pages {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

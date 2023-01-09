@@ -1,0 +1,32 @@
+.main-header-header {
+  height: 5.8rem;
+  background-color: rgb(53, 138, 204);
+}
+
+.main-header-ul {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+.main-header-ul a,
+.main-header-ul a:link,
+.main-header-ul a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.main-header-ul a:hover,
+.main-header-ul a:active,
+.main-header-ul a.app-activeNavLinkPage {
+  color: rgb(203, 212, 241);
+
+  text-decoration: underline;
+  text-decoration-color: rgb(203, 212, 241);
+  text-decoration-thickness: 3px;
+}
