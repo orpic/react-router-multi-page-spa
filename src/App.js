@@ -1,6 +1,12 @@
 // Router and imports
 import { Route } from "react-router-dom";
-import { Welcome, welcomePath, Products, productsPath } from "./pages";
+import {
+  Welcome,
+  welcomePath,
+  Products,
+  productsPath,
+  ProductDetail,
+} from "./pages";
 import { MainHeader } from "./components";
 
 //Css imports
@@ -16,6 +22,9 @@ function App() {
         </Route>
         <Route path={productsPath}>
           <Products />
+        </Route>
+        <Route path={productsPath}>
+          <ProductDetail />
         </Route>
       </main>
     </div>

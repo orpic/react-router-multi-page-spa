@@ -2,7 +2,16 @@ import React from "react";
 import "./Products.css";
 
 const Products = () => {
-  return <h1 className="app-pages">Products</h1>;
+  return (
+    <section className="products-section">
+      <h1>Hello products</h1>
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+      </ul>
+    </section>
+  );
 };
 
 export const productsPath = "/products";
